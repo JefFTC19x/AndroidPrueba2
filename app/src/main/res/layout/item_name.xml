@@ -6,9 +6,9 @@
     android:layout_height="wrap_content">
 
     <ImageView
-        android:id="@+id/careta"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
+        android:id="@+id/fotoPerfil"
+        android:layout_width="119dp"
+        android:layout_height="161dp"
         android:contentDescription="@string/cara"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -24,39 +24,75 @@
         android:id="@+id/star"
         android:layout_width="48dp"
         android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
         android:contentDescription="@string/color"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.98"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.777"
+        app:layout_constraintVertical_bias="0.858"
         app:srcCompat="@android:drawable/btn_star"
         tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck,DuplicateSpeakableTextCheck" />
 
     <TextView
-        android:id="@+id/lcon"
-        android:layout_width="209dp"
-        android:layout_height="68dp"
-        android:text="@string/icon"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.658"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.865" />
-
-    <TextView
-        android:id="@+id/lnombre"
-        android:layout_width="209dp"
-        android:layout_height="32dp"
+        android:id="@+id/ApellidoNombre"
+        android:layout_width="250dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
         android:text="@string/ybody"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.661"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.01"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fotoPerfil"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.07" />
+        app:layout_constraintVertical_bias="0.100" />
+
+    <TextView
+        android:id="@+id/MencionPrograma"
+        android:layout_width="250dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/ybody"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fotoPerfil"
+        app:layout_constraintTop_toBottomOf="@+id/ApellidoNombre"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <TextView
+        android:id="@+id/Telefono"
+        android:layout_width="120dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/ybody"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fotoPerfil"
+        app:layout_constraintTop_toBottomOf="@+id/MencionPrograma"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <TextView
+        android:id="@+id/añoIngreso"
+        android:layout_width="120dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="5dp"
+        android:text="@string/ybody"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Telefono"
+        app:layout_constraintTop_toBottomOf="@+id/MencionPrograma"
+        app:layout_constraintVertical_bias="0.05" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,11 +5,14 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath "com.android.tools.build:gradle:7.0.3"
-
+        classpath 'com.android.tools.build:gradle:8.10.1'
+        classpath 'com.google.gms:google-services:4.4.4' //implementa firebase
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
+}
+plugins {
+    //id 'com.google.gms.google-services' version '4.4.4' apply false/ --- Linea de error . implementa firebase linea 9
 }
 
 task clean(type: Delete) {

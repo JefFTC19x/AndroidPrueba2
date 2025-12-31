@@ -20,6 +20,10 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
+import com.google.firebase.database.FirebaseDatabase;
+
+
+
 public class MainActivity extends AppCompatActivity
 {
    //List<Repository> animes = Arrays.asList(new Repository("A","B"));
@@ -35,9 +39,14 @@ public class MainActivity extends AppCompatActivity
 
         setContentView(R.layout.activity_main);
 
+        //Usa Recyclerview para mostrar la lista de elementos
         RecyclerView rv = findViewById(R.id.Lista);
         rv.setHasFixedSize(true);
         rv.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
+
+        //connect to FIRE.x
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        database.setPersistenceEnabled(true);
 
         //.baseUrl("https://api.github.com/")
         Retrofit retrofit = new Retrofit.Builder()
